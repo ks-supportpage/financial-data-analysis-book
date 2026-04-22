@@ -5,56 +5,97 @@
   <title>サポートページ｜ExcelとPythonで実践する　金融データ分析入門</title>
   <style>
     body {
-      font-family: sans-serif;
-      line-height: 1.7;
-      max-width: 720px;
-      margin: 48px auto;
-      padding: 0 20px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                   "Yu Gothic", "Meiryo", sans-serif;
+      background: #f3f3f3;
       color: #222;
-      background: #fafafa;
+      line-height: 1.8;
     }
 
-    h1 {
+    .container {
+      max-width: 1200px;
+      margin: 56px auto;
+      padding: 0 32px;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .book-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    .content h1 {
+      margin: 0 0 16px 0;
       font-size: 2rem;
-      margin-bottom: 0.5em;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3em;
+      font-weight: 700;
     }
 
-    p {
-      margin-bottom: 1.5em;
+    .content p {
+      margin: 0 0 24px 0;
+      font-size: 1rem;
+      color: #444;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    .download-box {
+      background: #fff;
+      border: 1px solid #d6d6d6;
+      border-radius: 6px;
+      padding: 28px 32px;
     }
 
-    li {
-      margin-bottom: 12px;
+    .download-box ul {
+      margin: 0;
+      padding-left: 1.2em;
     }
 
-    a.download-link {
-      display: inline-block;
-      padding: 10px 16px;
-      background: #ffffff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+    .download-box li {
+      margin: 0;
+    }
+
+    .download-box a {
+      color: #145ca8;
       text-decoration: none;
-      color: #222;
-      transition: background 0.2s ease;
+      font-weight: 700;
     }
 
-    a.download-link:hover {
-      background: #f0f0f0;
+    .download-box a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .book-image {
+        max-width: 320px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>『ExcelとPythonで実践する　金融データ分析入門』サポートページ</h1>
-  <p>本書で用いるデータは以下からダウンロードできます。</p>
-  <ul>
-    <li><a class="download-link" href="https://github.com/ks-supportpage/financial-data-analysis-book/releases/download/v1.0/financial-data-analysis-book_ver1.0.zip">サンプルデータ</a></li>
-  </ul>
+  <div class="container">
+    <div class="book-image">
+      <img src="book_RGB.jpg" alt="『ExcelとPythonで実践する　金融データ分析入門』書影">
+    </div>
+
+    <div class="content">
+      <h1>『ExcelとPythonで実践する　金融データ分析入門』サポートページ</h1>
+      <p>本書で用いるデータは以下からダウンロードできます。</p>
+
+      <div class="download-box">
+        <ul>
+          <li><a href="https://github.com/ks-supportpage/financial-data-analysis-book/releases/download/v1.0/financial-data-analysis-book_ver1.0.zip">サンプルデータ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
